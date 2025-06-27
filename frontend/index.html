@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF to Text Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📄 PDF to Text Converter</h1>
+    <p>Transform your PDF documents into editable text instantly</p>
+
+    <div class="upload-box" id="drop-zone">
+      <label for="file-upload">
+        <img src="https://img.icons8.com/color/96/folder-invoices--v1.png" alt="folder icon" />
+        <p>Drop your PDF here or click to browse</p>
+        <small>Supports PDF files up to 10MB</small>
+        <input id="file-upload" type="file" accept="application/pdf" hidden />
+      </label>
+    </div>
+
+    <div class="buttons">
+      <button id="upload-btn" disabled>Upload & Convert</button>
+      <button id="clear-btn">Clear File</button>
+    </div>
+
+    <div id="result-box" hidden>
+      <h3>Extracted Text:</h3>
+      <pre id="result-text">Loading...</pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
