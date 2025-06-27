@@ -43,7 +43,6 @@ uploadBtn.addEventListener('click', async () => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/pdf'
-        // 🔐 No Authorization since bucket is public for uploads
       },
       body: selectedFile
     });
